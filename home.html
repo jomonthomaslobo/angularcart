@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app=""> <!-- Angular JS application mention-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script src="scripts/angular.min.js"></script>
+</head>
+<body >
+    <h1> New Start</h1>
+    <input type="text" ng-model="name"> <!-- variable name-->
+    <textarea ng-model="address" cols="30" rows="10"></textarea>
+    <div>Hello {{ name }} ,{{ address }}</div> <!-- {{  }} used for binding the expression like blade -->
+    {{ 1==1 }}
+    {{ {name:"jomon",age:30}.names}}
+    {{ ['David','anu','aswathy'][2] }}
+
+    <input type="text" ng-model="na" >
+    <div ng-bind="na">
+
+    </div>
+    <div ng-init="language=[{name:'php',version:'2'},
+    {name:'java',version:'3'}]">
+
+    </div>
+    <p ng-repeat="la in language">
+        name {{ la.name }} version {{ la.version }}
+
+    </p>
+    
+
+    </div>
+
+</body>
+</html>
